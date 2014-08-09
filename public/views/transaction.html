@@ -1,4 +1,4 @@
-<div data-ng-include src="'/views/includes/connection.html'"></div>
+<div data-ng-include src="'views/includes/connection.html'"></div>
 <section data-ng-controller="transactionsController" data-ng-init="findThis()">
   <div class="secondary_navbar hidden-xs hidden-sm" scroll data-ng-class="{'hidden': !secondaryNavbar}" data-ng-show="tx.txid" data-ng-init="hideSNavbar=0">
     <div class="container" data-ng-if="!hideSNavbar">
@@ -60,7 +60,7 @@
         </tr>
         <tr>
           <td><strong>Included in Block </strong></td>
-          <td data-ng-show="tx.blockhash" class="text-muted text-right"> <a href="/block/{{tx.blockhash}}">{{tx.blockhash}}</a>
+          <td data-ng-show="tx.blockhash" class="text-muted text-right"> <a href="block/{{tx.blockhash}}">{{tx.blockhash}}</a>
           <td data-ng-show="!tx.blockhash" class="text-muted text-right">Unconfirmed</td>
         </tr>
         <tr data-ng-show="tx.locktime">
@@ -81,7 +81,7 @@
     </div>
     <h2>Details</h2>
     <div class="block-tx" data-ng-if="tx.txid">
-      <div data-ng-include src="'/views/transaction/tx.html'"></div>
+      <div data-ng-include src="'views/transaction/tx.html'"></div>
     </div>
   </div>
 </section>

@@ -645,22 +645,22 @@ margin-left: 0;
   height: 45px;
 }
 #powered a.bitcore {
-  background-image: url('/img/logo.svg');
+  //background-image: url('/img/logo.svg');
   background-size: 80px;
   width: 30%;
 }
 #powered a.nodejs {
-  background-image: url('/img/nodejs.png');
+  //background-image: url('/img/nodejs.png');
   background-size: 80px;
   width: 30%;
 }
 #powered a.angularjs {
-  background-image: url('/img/angularjs.png');
+  //background-image: url('/img/angularjs.png');
   background-size: 50px;
   width: 20%;
 }
 #powered a.leveldb {
-  background-image: url('/img/leveldb.png');
+  //background-image: url('/img/leveldb.png');
   background-size: 50px;
   width: 20%;
 }

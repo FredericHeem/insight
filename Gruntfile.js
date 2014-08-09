@@ -79,8 +79,7 @@ module.exports = function(grunt) {
     },
     macreload: {
       chrome: {
-        browser: 'chrome',
-        editor: 'macvim'
+        browser: 'chrome'
       }
     },
     watch: {
