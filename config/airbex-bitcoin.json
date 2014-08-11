@@ -1,0 +1,8 @@
+{
+  "config":{
+    "company": "Airbex",
+    "baseRef": "/explorer/bitcoin/",
+    "socketioPath": "/explorer/bitcoin/api/socket.io",
+    "currency": "btc"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "config":{
+    "company": "Airbex",
+    "baseRef": "/explorer/litecoin/",
+    "socketioPath": "/explorer/litecoin/api/socket.io",
+    "currency": "btc"
+  }
+}
