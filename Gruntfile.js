@@ -132,7 +132,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
 
   //Compile task (concat + minify)
-  grunt.registerTask('compile', ['ejs', 'replace:config', 'concat', 'uglify', 'cssmin', 'macreload']);
+  grunt.registerTask('compile', ['ejs', 'replace:config', 'concat', 'uglify', 'cssmin']);
 
 
 };
