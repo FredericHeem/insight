@@ -1,6 +1,6 @@
 {
   "config":{
-    "company": "Airbex",
+    "company": "Airbex-plorer for Bitcoin",
     "baseRef": "/explorer/btc/",
     "socketioPath": "/explorer/btc/api/socket.io",
     "currency": "btc"

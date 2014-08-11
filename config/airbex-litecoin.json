@@ -1,6 +1,6 @@
 {
   "config":{
-    "company": "Airbex",
+    "company": "Airbex-plorer for Litecoin",
     "baseRef": "/explorer/litecoin/",
     "socketioPath": "/explorer/litecoin/api/socket.io",
     "currency": "btc"
