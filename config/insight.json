@@ -2,6 +2,7 @@
   "config":{
     "company": "Insight",
     "baseRef": "/",
+    "baseRefSocketio": "/",
     "currency": "btc"
   }
 }

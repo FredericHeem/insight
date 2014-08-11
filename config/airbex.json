@@ -2,6 +2,7 @@
   "config":{
     "company": "Airbex",
     "baseRef": "/explorer/btc/",
+    "baseRefSocketio": "/explorer/btc/api/",
     "currency": "btc"
   }
 }
