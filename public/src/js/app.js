@@ -8,6 +8,7 @@ angular.module('insight',[
   'ui.bootstrap',
   'ui.route',
   'monospaced.qrcode',
+  'insight.config',
   'insight.system',
   'insight.socket',
   'insight.blocks',
@@ -19,6 +20,7 @@ angular.module('insight',[
   'insight.currency'
 ]);
 
+angular.module('insight.config', []);
 angular.module('insight.system', []);
 angular.module('insight.socket', []);
 angular.module('insight.blocks', []);

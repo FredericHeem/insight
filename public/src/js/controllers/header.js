@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('insight.system').controller('HeaderController',
-  function($scope, $rootScope, $modal, getSocket, Global, Block) {
+  function($scope, $rootScope, $modal, getSocket, Global, Block, Config) {
     $scope.global = Global;
-
+    $scope.config = Config;
     $rootScope.currency = {
       factor: 1,
       bitstamp: 0,

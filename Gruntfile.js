@@ -1,14 +1,19 @@
 'use strict';
 
 module.exports = function(grunt) {
-
   //Load NPM tasks
+  var getConfigFile = function(){
+    var operator = process.env.OPERATOR || "insight";
+    return grunt.file.readJSON('./config/' + operator + '.json')
+  }
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-css');
   grunt.loadNpmTasks('grunt-markdown');
   grunt.loadNpmTasks('grunt-macreload');
+  grunt.loadNpmTasks('grunt-ejs');
+  grunt.loadNpmTasks('grunt-replace');
 
   // Project Configuration
   grunt.initConfig({
@@ -65,6 +70,32 @@ module.exports = function(grunt) {
         dest: 'public/css/main.min.css'
       }
     },
+    replace: {
+        config: {
+          options: {
+            patterns: [{
+              json: getConfigFile()
+            }]
+          },
+          files: [{
+            expand: true,
+            flatten: true,
+            src: ['config/config.js'],
+            dest: 'public/src/js/services'
+          }]
+        }
+    },
+    ejs: {
+        options: {
+            environment: process.env.NODE_ENV || 'dev',
+            config:getConfigFile().config
+        },
+
+        'index.html': {
+            src: 'public/index.ejs',
+            dest: 'public/index.html'
+        }
+    },
     markdown: {
       all: {
         files: [
@@ -101,7 +132,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
 
   //Compile task (concat + minify)
-  grunt.registerTask('compile', ['concat', 'uglify', 'cssmin', 'macreload']);
+  grunt.registerTask('compile', ['ejs', 'replace:config', 'concat', 'uglify', 'cssmin', 'macreload']);
 
 
 };

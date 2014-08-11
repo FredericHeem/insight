@@ -51,9 +51,10 @@ ScopedSocket.prototype.emit = function(event, data, callback) {
 };
 
 angular.module('insight.socket').factory('getSocket',
-  function($rootScope) {
+  function($rootScope, Config) {
+    var path = Config.baseRef + "socket.io";
     var socket = io(null , {
-      path:'/explorer/socket.io'
+      path: path
     });
     return function(scope) {
       var scopedSocket = new ScopedSocket(socket, $rootScope);
