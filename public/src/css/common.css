@@ -644,6 +644,14 @@ margin-left: 0;
   float: left;
   height: 45px;
 }
+
+
+#powered a.airbex {
+  background-image: url('http://demo.airbex.net/logo-airbex-small.png');
+  background-size: 200px;
+  width: 100%;
+  height: 100px;
+}
 #powered a.bitcore {
   //background-image: url('/img/logo.svg');
   background-size: 80px;

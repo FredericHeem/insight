@@ -19,6 +19,10 @@ angular.module('insight').config(function($routeProvider) {
       templateUrl: 'views/index.html',
       title: 'Home'
     }).
+    when('/index.html', {
+        templateUrl: 'views/index.html',
+        title: 'Home'
+      }).
     when('/blocks', {
       templateUrl: 'views/block_list.html',
       title: 'Bitcoin Blocks solved Today'
