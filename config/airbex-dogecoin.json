@@ -1,0 +1,9 @@
+{
+  "config":{
+    "company": "Airbex-plorer for Dogecoin",
+    "baseRef": "/explorer/dogecoin/",
+    "socketioPath": "/explorer/dogecoin/api/socket.io",
+    "currencyName":"Dogecoin",
+    "currencyCode": "DOGE"
+  }
+}

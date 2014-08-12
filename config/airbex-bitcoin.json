@@ -3,6 +3,7 @@
     "company": "Airbex-plorer for Bitcoin",
     "baseRef": "/explorer/bitcoin/",
     "socketioPath": "/explorer/bitcoin/api/socket.io",
-    "currency": "btc"
+    "currencyName":"Bitcoin",
+    "currencyCode": "BTC"
   }
 }

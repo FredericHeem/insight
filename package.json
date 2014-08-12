@@ -43,7 +43,10 @@
     "front-end"
   ],
   "scripts": {
-    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api"
+    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api",
+    "bitcoin":"OPERATOR=airbex-bitcoin grunt compile watch",
+    "litecoin":"OPERATOR=airbex-litecoin grunt compile watch",
+    "dogecoin":"OPERATOR=airbex-dogecoin grunt compile watch"
   },
   "dependencies": {
     "insight-bitcore-api": ">=0.2.2"

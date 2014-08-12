@@ -116,9 +116,9 @@
       </div>
     </div> <!-- END OF COL-8 -->
 
-    <div class="col-xs-12 col-md-4 col-gray">
-      <h2>Bitcoin node information</h2>
-      <table class="table" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">
+    <div class="col-xs-12 col-md-4 col-gray" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">
+      <h2>{{config.currencyName}} node information</h2>
+      <table class="table" >
         <thead  data-ng-include src="'views/includes/infoStatus.html'"></thead>
         <tbody>
           <tr>
