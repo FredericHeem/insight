@@ -1,6 +1,7 @@
 {
   "config":{
     "company": "Airbex-plorer for Litecoin",
+    "description": "Litecoin Airbex-plorer: litecoin blockchain explorer. View detailed information on all litecoin transactions and block",
     "baseRef": "/explorer/litecoin/",
     "socketioPath": "/explorer/litecoin/api/socket.io",
     "currencyName":"Litecoin",

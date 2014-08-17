@@ -1,6 +1,7 @@
 {
   "config":{
     "company": "Airbex-plorer for Dogecoin",
+    "description": "Dogecoin Airbex-plorer: dogecoin blockchain explorer. View detailed information on all dogecoin transactions and block",
     "baseRef": "/explorer/dogecoin/",
     "socketioPath": "/explorer/dogecoin/api/socket.io",
     "currencyName":"Dogecoin",

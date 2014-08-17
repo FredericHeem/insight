@@ -1,6 +1,7 @@
 {
   "config":{
     "company": "Airbex-plorer for Bitcoin",
+    "description": "Bitcoin Airbex-plorer: bitcoin blockchain explorer. View detailed information on all bitcoin transactions and block",
     "baseRef": "/explorer/bitcoin/",
     "socketioPath": "/explorer/bitcoin/api/socket.io",
     "currencyName":"Bitcoin",
