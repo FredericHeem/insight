@@ -1,0 +1,10 @@
+{
+  "config":{
+    "company": "Airbex-plorer for Darkcoin",
+    "description": "Darkcoin Airbex-plorer: darkcoin blockchain explorer. View detailed information on all darkcoin transactions and block",
+    "baseRef": "/explorer/darkcoin/",
+    "socketioPath": "/explorer/darkcoin/api/socket.io",
+    "currencyName":"Darkcoin",
+    "currencyCode": "DRK"
+  }
+}
